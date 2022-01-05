@@ -6,7 +6,7 @@ margin-left: 5em;
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
-    padding: 0em 2em 4em 2em;
+    padding: 2em 2em 4em 2em;
 }
 
 .oper-input1 {
@@ -24,41 +24,47 @@ margin-left: 5em;
         font-size: 24px;
     }
 }
+
+.oper-title {
+    margin: .50em 0em;
+    font-size: 52px;
+    color: white;
+}
 `
 
-export default function BoxOperations() {
+export default function BoxOperations(props) {
     return (
         <ContainerBox>
             <div className="oper-title">
-                Somar
+                {props.titulo}
             </div>
             <div className="oper-border">
                 <div className="oper-input1">
                     <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal1} </div>
                     <input />
-                    <div className="simbolo"> = </div>
+                    <div className="simbolo"> {props.sinal2} </div>
                     <input />
                 </div>
                 <div className="oper-input1">
                     <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal3} </div>
                     <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal4} </div>
                     <input />
-                    <div className="simbolo"> = </div>
+                    <div className="simbolo"> {props.sinal5} </div>
                     <input />
                 </div>
                 <div className="oper-input1">
                 <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal6} </div>
                     <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal7} </div>
                     <input />
-                    <div className="simbolo"> + </div>
+                    <div className="simbolo"> {props.sinal8} </div>
                     <input />
                     
-                    <div className="simbolo"> = </div>
+                    <div className="simbolo"> {props.sinal9} </div>
                     <input />
                 </div>
             </div>

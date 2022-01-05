@@ -6,6 +6,7 @@ flex-direction: row;
 background-color: white;
     opacity: 90%;
     height: 6em;
+   // min-width: 100vw;
 .soon img {
     width: 70%;
 }

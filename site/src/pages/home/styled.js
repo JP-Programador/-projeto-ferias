@@ -8,7 +8,9 @@ flex-direction: column;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    padding-left: 17em}
+    padding-left: 7em;
+    min-height: 30em;
+}
 .xx {
     display: flex;
     flex-direction: row;
