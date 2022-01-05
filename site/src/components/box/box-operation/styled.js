@@ -36,7 +36,7 @@ export default function BoxOperations(props) {
     return (
         <ContainerBox>
             <div className="oper-title">
-                {props.titulo}
+                {props.titulos}
             </div>
             <div className="oper-border">
                 <div className="oper-input1">
