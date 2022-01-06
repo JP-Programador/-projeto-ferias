@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/box/box-rest/styled';
+import App from './routes'
 
 ReactDOM.render(
   <React.StrictMode>
