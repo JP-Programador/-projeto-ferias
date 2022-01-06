@@ -1,12 +1,12 @@
 import BoxOperations from "../../../components/box/box-operation/styled"
 import Header from "../../../components/header/styled"
 import Menu from "../../../components/menu/styled"
-import { ContainerAdd, Container } from "./styled"
+import { ContainerMultiplication, Container } from "./styled"
 
-export default function OperationAdd(props) {
+export default function OperationMultiplication(props) {
 return (
     <Container>    
-        <ContainerAdd>
+        <ContainerMultiplication>
         <Header/>
             <div className="xx">
                 <div className="menus">
@@ -14,12 +14,12 @@ return (
                 </div>
                 <div className="content">
                     <div className="add">
-                        <BoxOperations titulo="4 Operações (Somar)" sinal1="+" sinal2="=" sinal3="+" sinal4="+" sinal5="=" sinal6="+"  sinal7="+" sinal8="+" sinal9="=" sinal10=""/>
+                        <BoxOperations titulo="4 Operações (Multiplicação)" sinal1="X" sinal2="=" sinal3="X" sinal4="X" sinal5="=" sinal6="X"  sinal7="X" sinal8="X" sinal9="=" sinal10=""/>
                     </div>
                 </div>
             </div>
 
-        </ContainerAdd>
+            </ContainerMultiplication>
     </Container>
 
 )

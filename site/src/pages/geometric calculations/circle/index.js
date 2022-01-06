@@ -1,12 +1,13 @@
-import BoxOperations from "../../../components/box/box-operation/styled"
+
+import BoxGeometric from "../../../components/box/box-geometric/styled"
 import Header from "../../../components/header/styled"
 import Menu from "../../../components/menu/styled"
-import { ContainerAdd, Container } from "./styled"
+import { GeometricCircles, Container } from "./styled"
 
-export default function OperationAdd(props) {
+export default function GeometricCircle(props) {
 return (
     <Container>    
-        <ContainerAdd>
+        <GeometricCircles>
         <Header/>
             <div className="xx">
                 <div className="menus">
@@ -14,12 +15,14 @@ return (
                 </div>
                 <div className="content">
                     <div className="add">
-                        <BoxOperations titulo="4 Operações (Somar)" sinal1="+" sinal2="=" sinal3="+" sinal4="+" sinal5="=" sinal6="+"  sinal7="+" sinal8="+" sinal9="=" sinal10=""/>
+                        <BoxGeometric title="Calcular Perímetro" name1="Raio" sim1="X" name2="Pi" sim2="="  />
+                        <BoxGeometric title="Calcular Área" name1="Raio" sim1="X" name2="Pi" sim2="="/>
+
                     </div>
                 </div>
             </div>
 
-        </ContainerAdd>
+        </GeometricCircles>
     </Container>
 
 )
