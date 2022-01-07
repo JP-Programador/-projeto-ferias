@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 const ContainerMenu = styled.div `
@@ -29,27 +30,27 @@ option {
 `
 
 export default function Menu() {
+
     return (
         <ContainerMenu>
             <div className="box-tips"> 
                 <div className="title">Dicas</div>
-                <div className="sub-title">1º Ano</div>
-                <div className="sub-title">2º Ano</div>
+                <div className="sub-title">  1º Ano</div> 
+                <div className="sub-title">  2º Ano </div>
                 <div className="sub-title">3º Ano</div>
             </div>
             <div className="box-tips1"> 
                 <div className="title">Calculos</div>
-                <div className="sub-title">Trigonometria</div>
                 <div className="sub-title1">
-                    <select name="cars" id="cars">
+                    <select name="cars" id="cars" onchange="location = this.value;" >
                     <option value="4-Operações">4 Operações</option>
-                    <option value="Somar">Somar</option>
-                    <option value="Subtrair">Subtrair</option>
-                    <option value="Multiplicar">Multiplicar</option>
+                        <option value=""> Somar</option> 
+                        <Link to="OperationSubtract">   <div className="xx"> <option value="Subtrair">  Subtrair </option>  </div> </Link>
+                    <option value="Multiplicar"><Link to="">Multiplicar</Link></option>
                     <option value="Divisão">Divisão</option>
                     </select>
                 </div>
-                <div className="sub-title">Potenciação e Radiação</div>
+                <div className="sub-title"> <Link to="">  Potenciação e Radiação </Link></div>
                 <div className="sub-title"> Equação 1º / 2º Grau</div>
                 <div className="sub-title">Conversão de Unidades</div>
                 <div className="sub-title">Calculos Geométricos</div>

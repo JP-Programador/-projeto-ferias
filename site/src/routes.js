@@ -7,6 +7,7 @@ import OperationSubtract from './pages/4Operations/subtract';
 import GeometricTriangle from './pages/geometric calculations/triangle';
 import GeometricCircle from './pages/geometric calculations/circle';
 import GeometricRectangles from './pages/geometric calculations/rectangle';
+import OnedegreeEquation from './pages/equations/1st degree equation';
 
 
 export default function Rou() {
@@ -21,6 +22,7 @@ export default function Rou() {
                 <Route path="GeometricTriangle" element={<GeometricTriangle/>} />
                 <Route path="GeometricCircle" element={<GeometricCircle/>} />
                 <Route path="GeometricRectangles" element={<GeometricRectangles/>} />
+                <Route path="1stDegreeEquation" element={<OnedegreeEquation/>} />
 
             </Routes>
         </Router>

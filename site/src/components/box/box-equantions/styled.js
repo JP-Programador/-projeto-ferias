@@ -1,6 +1,41 @@
 import styled from "styled-components";
 
 const ContainerEquations = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+border-radius: 15px;
+width: 52em;
+padding: 4em 0em;
+
+.box-inputs, .minibox1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.minibox {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-right: 2em;
+}
+.minibox1 {
+    margin: 2em  1em 0em 0em;
+    align-items: center;
+
+    input {
+        width: 20em;
+    }
+}
+input {
+    height: 1.8em;
+    margin-left: 1em;
+    border: 1.5px solid black;
+}
+
 
 `
 
@@ -22,12 +57,12 @@ export default function BoxEquations() {
                 </div>
             </div>
             <div className="box-result">
-                <div className="box-x">
-                    <div className="name">X</div>
+                <div className="minibox1">
+                    <div className="name">X¹</div>
                     <input />
                 </div>
-                <div className="box-x">
-                    <div className="name">X</div>
+                <div className="minibox1">
+                    <div className="name">X²</div>
                     <input />
                 </div>
             </div>
