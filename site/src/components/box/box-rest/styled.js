@@ -6,7 +6,7 @@ flex-direction: column;
 background-color: white;
 height: 12em;
 width: 40em;
-border-radius: 1em;
+border-radius: 2em;
 align-items: center;
 padding: 2em 0em 3.5em 0em;
 

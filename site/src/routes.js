@@ -12,6 +12,8 @@ import OnedegreeEquation from './pages/equations/1st degree equation';
 import OperationPotency from './pages/potency';
 import OperationPercentage from './pages/percentage';
 import DescriptionTips from './pages/tips';
+import Conversions from './pages/Conversions';
+
 
 
 export default function Rou() {
@@ -32,6 +34,8 @@ export default function Rou() {
 
                 <Route path="OperationPotency" element={<OperationPotency/>} />
                 <Route path="OperationPercentage" element={<OperationPercentage/>} />
+                <Route path="Conversions" element={<Conversions/>} />
+
 
             </Routes>
         </Router>
