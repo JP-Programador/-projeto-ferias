@@ -5,9 +5,10 @@ import { ContainerOnedegreeEquation, Container } from "./styled"
 
 export default function OnedegreeEquation(props) {
 return (
-    <Container>    
+    <Container> 
+          <Header/>   
         <ContainerOnedegreeEquation>
-        <Header/>
+      
             <div className="xx">
                 <div className="menus">
                     <Menu />

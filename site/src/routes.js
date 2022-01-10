@@ -9,6 +9,10 @@ import GeometricCircle from './pages/geometric calculations/circle';
 import GeometricRectangles from './pages/geometric calculations/rectangle';
 import OnedegreeEquation from './pages/equations/1st degree equation';
 
+import OperationPotency from './pages/potency';
+import OperationPercentage from './pages/percentage';
+import DescriptionTips from './pages/tips';
+
 
 export default function Rou() {
     return(
@@ -23,6 +27,11 @@ export default function Rou() {
                 <Route path="GeometricCircle" element={<GeometricCircle/>} />
                 <Route path="GeometricRectangles" element={<GeometricRectangles/>} />
                 <Route path="1stDegreeEquation" element={<OnedegreeEquation/>} />
+                <Route path="DescriptionTips" element={<DescriptionTips/>} />
+
+
+                <Route path="OperationPotency" element={<OperationPotency/>} />
+                <Route path="OperationPercentage" element={<OperationPercentage/>} />
 
             </Routes>
         </Router>

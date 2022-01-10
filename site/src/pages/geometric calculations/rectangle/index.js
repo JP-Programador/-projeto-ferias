@@ -6,9 +6,10 @@ import { GeometricRectangle, Container } from "./styled"
 
 export default function GeometricRectangles(props) {
 return (
-    <Container>    
+    <Container>  
+        <Header/>  
         <GeometricRectangle>
-        <Header/>
+        
             <div className="xx">
                 <div className="menus">
                     <Menu />

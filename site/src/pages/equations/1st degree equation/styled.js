@@ -18,9 +18,10 @@ flex-direction: column;
 
 const Container = styled.div `
 display: flex;
-flex-direction: row;
+flex-direction: column;
 background-image: url('./assets/images/fundo2.jpg');
 background-repeat: no-repeat;
+background-size: cover;
 height: 100vh;
 width: 100%;
 `

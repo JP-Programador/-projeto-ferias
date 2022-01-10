@@ -6,9 +6,9 @@ import { ContainerHome, Container } from "./styled"
 export default function Home() {
     return (
         <Container>
-         
+         <Header/>
         <ContainerHome>
-            <Header/>
+            
             <div className="xx">
                 <div className="menus">
                     <Menu />

@@ -7,8 +7,8 @@ import { GeometricCircles, Container } from "./styled"
 export default function GeometricCircle(props) {
 return (
     <Container>    
-        <GeometricCircles>
         <Header/>
+        <GeometricCircles>
             <div className="xx">
                 <div className="menus">
                     <Menu />

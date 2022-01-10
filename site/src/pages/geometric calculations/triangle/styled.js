@@ -20,10 +20,11 @@ flex-direction: column;
 
 const Container = styled.div `
 display: flex;
-flex-direction: row;
-background-image: url('./assets/images/fundo2.jpg');
+flex-direction: column;
+background-image: url('./assets/images/183621-mathematics.jpg');
 background-repeat: no-repeat;
-height: 100vh;
+background-size: cover;
+height: 100%;
 width: 100%;
 `
 

@@ -7,8 +7,9 @@ import { ContainerTriangle, Container } from "./styled"
 export default function GeometricTriangle(props) {
 return (
     <Container>    
-        <ContainerTriangle>
         <Header/>
+        <ContainerTriangle>
+        
             <div className="xx">
                 <div className="menus">
                     <Menu />
