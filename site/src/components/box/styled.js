@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const ContainerBox = styled.div `
+display: flex;
+flex-direction: column;
 padding: 25px;
 .box-everything {
     border: none;

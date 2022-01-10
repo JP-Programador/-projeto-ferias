@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 const ContainerBoxConversions = styled.div `
-display: flex;
-flex-direction: column;
+
 background-color: white;
 height: 13em;
 width: 12em;
 border: 0em;
-margin-left: 20em;
 padding: .6em 0em 1em 1.5em;
 
-
+margin: 22px;
 
 select{
     width: 12.5em;
@@ -40,23 +38,42 @@ input{
 
 
 `
-export default function BoxConversions(){
+export default function BoxConversions(props){
     return(
         <ContainerBoxConversions>
-            <div className="title">Comprimento</div>
+            <div className="title">{props.titulo}</div>
             <div className="sub-title"> Quero Converter </div>
             <div className="inputs">
                 <input />
             </div>
             <div className="inputs">
                 <select>
-                    <option>Dólar</option>
+                    <option>{props.op1}</option>
+                    <option>{props.op2}</option>
+                    <option>{props.op3}</option>
+                    <option>{props.op4}</option>
+                    <option>{props.op5}</option>
+                    <option>{props.op6}</option>
+                    <option>{props.op7}</option>
+                    <option>{props.op8}</option>
+                    <option>{props.op9}</option>
+                    <option>{props.op10}</option>
+                    
                 </select>
             </div>
             <div className="sub-title">Para</div>
             <div className="inputs">
                 <select>
-                    <option>Real</option>
+                <option>{props.ep1}</option>
+                    <option>{props.ep2}</option>
+                    <option>{props.ep3}</option>
+                    <option>{props.ep4}</option>
+                    <option>{props.ep5}</option>
+                    <option>{props.ep6}</option>
+                    <option>{props.ep7}</option>
+                    <option>{props.ep8}</option>
+                    <option>{props.ep9}</option>
+                    <option>{props.ep10}</option>
                 </select>
             </div>
             <div className="inputs"><input /></div>
