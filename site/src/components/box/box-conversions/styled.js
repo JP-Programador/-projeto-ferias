@@ -35,10 +35,14 @@ input{
     margin: .2em 0em;
 }
 
-
-
+.x {
+    display:  ;
+}
 `
 export default function BoxConversions(props){
+   
+    
+    
     return(
         <ContainerBoxConversions>
             <div className="title">{props.titulo}</div>
@@ -57,7 +61,7 @@ export default function BoxConversions(props){
                     <option>{props.op7}</option>
                     <option>{props.op8}</option>
                     <option>{props.op9}</option>
-                    <option>{props.op10}</option>
+                    <option className="x">{props.op10}</option>
                     
                 </select>
             </div>
@@ -73,7 +77,7 @@ export default function BoxConversions(props){
                     <option>{props.ep7}</option>
                     <option>{props.ep8}</option>
                     <option>{props.ep9}</option>
-                    <option>{props.ep10}</option>
+                    <option >{props.ep10}</option>
                 </select>
             </div>
             <div className="inputs"><input /></div>
