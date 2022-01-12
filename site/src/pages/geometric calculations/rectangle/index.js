@@ -16,7 +16,7 @@ return (
                 </div>
                 <div className="content">
                     <div className="add">
-                        <BoxGeometric title="Calcular Perímetro" name1="A" sim1="+" name2="B" sim2="+"  name3="C" sim3="+"  name4="D" sim4="=" input1={<input/>} input2={<input/>} />
+                        <BoxGeometric title="Calcular Perímetro" name1="B" sim1="+" name2="H" sim2="="  name3="P"  />
                         <BoxGeometric title="Calcular Área" name1="B" sim1="X" name2="H" sim2="="  name3="A"/>
 
                     </div>

@@ -19,7 +19,7 @@ a {
     color: black;
 }
 .box-tips, .box-tips1 {
-    padding: 1em .5em .0em .5em;
+    padding: 1em .5em .0em 1.5em;
     > 
     .sub-title {
         padding: .7em 0em 0em .40em;
@@ -39,8 +39,7 @@ a {
 .sub-title:hover, a:hover {
             color: red;
             cursor: pointer;
-            margin: .3em;
-}
+            transform: scale(1.1);}
 
 select {
     border-color: white;
@@ -128,7 +127,7 @@ else {
                 }
                        
                  </div>
-                <div className="sub-title"> <Link to="OperationPercentage"> Porcentagem </Link></div>
+                <div className="sub-title"> <Link to="/OperationPercentage"> Porcentagem </Link></div>
             </div>
         </ContainerMenu>
     )

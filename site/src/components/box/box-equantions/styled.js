@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const ContainerEquations = styled.div`
@@ -40,6 +41,20 @@ input {
 `
 
 export default function BoxEquations() {
+
+    const [num1, setNum1] =  useState (0);
+    const [num2, setNum2] =  useState (0);
+    const [num3, setNum3] =  useState (0);
+
+    const [cal, setCal] =  useState (0);
+
+
+    async function Equação() {
+        if(num1 == 0 ) {
+            
+        }
+}
+
     return (
         <ContainerEquations>
             <div className="box-inputs">
