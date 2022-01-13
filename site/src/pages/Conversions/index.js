@@ -2,7 +2,7 @@ import Header from "../../components/header/styled"
 import Menu from "../../components/menu/styled"
 import { ContainerHome, Container } from "./styled"
 
-import Box from "../../components/box/box-conversions/styled"
+import Box from "../../components/box/box-Conversions/styled"
 
 export default function Home() {
     return (
@@ -17,14 +17,17 @@ export default function Home() {
                 <div className="filho"> 
                     <Box 
                         titulo="Moeda"
-                        op1="Dolár Americano"  ep1="Dolár"
+                        op1="Dolár Americano"  ep1="Dolár Americano"
                         op2="Real Brasileiro"  ep2="Real Brasileiro"
                         op3="Quiate" ep3="Quiate"
                         op4="Euro" ep4="Euro"
                         op5="Guarani Paraguaio" ep5="Guarani Paraguaio"
                         op6="Libra Sudanesa" ep6="Libra Sudanesa"
-                        op7="Libra Egipícia" ep="Libra Egipícia"
-
+                        op7="Libra Egipícia" ep7="Libra Egipícia"
+                        op8="Renminbi (Yuan)" ep8="Renminbi (Yuan)"
+                        op9="Iene" ep9="Iene"
+                        op10="Libra esterlina" ep10="Libra esterlina"
+                        
                     />
                     <Box 
                         titulo="Comprimento"
@@ -83,6 +86,12 @@ export default function Home() {
                     op3="Metro por segundo" ep3="Metro por segundo"
                     op4="Quilômetro por hora " ep4="Quilômetro por hora"
                     op5="Nó" ep5="Nó"
+                    op6="" ep6=""
+                    op7="" ep7=""
+                    op8="" ep8=""
+                    op9="" ep9=""
+                    op10="" ep10=""
+
                     />
 
                 </div> 
