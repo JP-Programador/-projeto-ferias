@@ -35,9 +35,6 @@ input{
     margin: .2em 0em;
 }
 
-.x {
-    display:  ;
-}
 `
 export default function BoxConversions(props){
    
