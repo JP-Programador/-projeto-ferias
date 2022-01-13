@@ -21,6 +21,8 @@ margin-left: 8em;
     display: flex;
     flex-direction: row;
     margin-bottom: .1em;
+
+    align-items: center;
 }
 .name {
     margin-right: 1em;
@@ -37,6 +39,7 @@ input {
 
 .simbolo {
     font-size: 22px;
+    margin-left: 1.2em;
 }
 `
 
