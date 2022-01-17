@@ -2,7 +2,7 @@ import Header from "../../components/header/styled"
 import Menu from "../../components/menu/styled"
 import { ContainerHome, Container } from "./styled"
 
-import Box from "../../components/box/box-Conversions/styled"
+import Box from "../../components/box/box-conversions/styled"
 
 export default function Home() {
     return (

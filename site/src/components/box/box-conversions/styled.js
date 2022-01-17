@@ -46,10 +46,25 @@ export default function BoxConversions(props){
     const [con, setCon] = useState({})
     const [teste, setTeste] = useState(0)
 
+    const [Camp1, SetCamp1] = useState('')
+    const [Revel, SetRevel] = useState('')
+
+
+
+    async function ConverterTodos() {
+      if(props.op1 === 'Milha por hora' && props.ep2 === "Pés por Segundo" ){
+        let vel = Camp1  * 1.467;
+        SetRevel(vel)
+        }
+        else {
+            SetRevel(2+2)
+        }
+    }
+
     async function Conversão() {
 
         if( teste === 2) {
-        let resp = await axios.get(`https://economia.awesomeapi.com.br/last/BRL-USD`);
+        let resp = await axios.get(``);
        setCon([resp.data.BRLUSD.ask])    
         console.log(setTeste)
         }
@@ -60,17 +75,20 @@ export default function BoxConversions(props){
         
     };
 
+    console.log(Revel)
+
   useEffect(() => {
         Conversão();
+        ConverterTodos()
       
-    }, [])  
+    })  
 
     return(
         <ContainerBoxConversions>
             <div className="title">{props.titulo}</div>
             <div className="sub-title"> Quero Converter </div>
             <div className="inputs">
-                <input />
+                <input  value={Camp1} onChange={(e) => SetCamp1(Number(e.target.value))} />
             </div>
             <div className="inputs">
                 <select  value={teste} onChange={Number => setTeste(Number.target.value)} > 
@@ -105,7 +123,7 @@ export default function BoxConversions(props){
             <div className="inputs">
                 
              
-                <input value={con} />
+                <input value={Revel} />
                 </div>
         </ContainerBoxConversions>
     )
