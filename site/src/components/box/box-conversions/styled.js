@@ -1115,7 +1115,6 @@ export default function BoxConversions(props){
                     let vel = Num1 / 1.972;
                     SetRevel(vel);
                 }
-
                 else if(Option1 === 'op4' && Option2 === 'ep5' && props.op4 === 'Copo' && props.ep5 === 'Onça líquida americana') {
                     let vel = Num1 *  8.115;
                     SetRevel(vel);
