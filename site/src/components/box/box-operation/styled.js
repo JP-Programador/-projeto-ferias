@@ -33,6 +33,36 @@ margin-left: 5em;
     font-size: 52px;
     color: white;
 }
+
+
+.box-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 14em 0em .9em;
+
+    
+}
+
+.sesson {
+    border: none;
+    padding: 8px 15px;
+
+    :hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+.sesson:nth-child(1) {
+        background-color: #ACEEC2;
+}
+
+.sesson:nth-child(2) {
+        background-color: #ACDCEE;
+}
+
+.sesson:nth-child(3) {
+        background-color: #F76464;
+}
 `
 
 export default function BoxOperations(props) {
@@ -92,6 +122,23 @@ export default function BoxOperations(props) {
         }
     }
 
+    function Limpar1() {
+        setNum1('')
+        setNum2('')
+    }
+
+  async  function Limpar2() {
+        setNum3('')
+        setNum4('')
+        setNum5('')
+    }
+
+   async function Limpar3() {
+        setNum6('')
+        setNum7('')
+        setNum8('')
+        setNum9('')
+    }
 
     useEffect(() => {
         somar();
@@ -133,8 +180,13 @@ export default function BoxOperations(props) {
                     <input placeholder="Quarto Valor" value={num9} onChange={(e) => setNum9(Number(e.target.value))}/>
                     
                     <div className="simbolo"> {props.sinal9} </div>
-                    <input value={cal2}/>
-                </div> 
+                <input value={cal2}/>
+                </div>
+                <div className="box-button">
+                    <div className="sesson"  onClick={Limpar1}>Limpra Secção 1 </div>
+                    <div className="sesson" onClick={Limpar2}>Limpra Secção 2</div>
+                    <div className="sesson" onClick={Limpar3}>Limpra Secção 3</div>
+                </div>
             </div>
         </ContainerBox>
     )
